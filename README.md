@@ -1,8 +1,8 @@
-# 🚀 Golden CI/CD Python
+#  Golden CI/CD Python
 
 Production-ready FastAPI application with automated CI/CD pipeline, Docker containerization, and future AWS EC2 deployment support.
 
-## 📋 Architecture
+##  Architecture
 
 ```
 golden-cicd-python/
@@ -23,7 +23,7 @@ golden-cicd-python/
 └── README.md
 ```
 
-## 🔄 CI/CD Flow
+##  CI/CD Flow
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -84,7 +84,7 @@ golden-cicd-python/
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## 🏃 Run Locally
+##  Run Locally
 
 ### Prerequisites
 - Python 3.11+
@@ -131,7 +131,7 @@ curl http://localhost:8000/health
 pytest tests/ -v
 ```
 
-## 🐳 Run with Docker
+##  Run with Docker
 
 ### Build and run:
 ```bash
@@ -156,7 +156,7 @@ chmod +x scripts/deploy.sh
 ./scripts/deploy.sh
 ```
 
-## ☁️ Enable EC2 Deployment (Future)
+##  Enable EC2 Deployment (Future)
 
 Currently, the pipeline validates Docker containers locally. To enable AWS EC2 deployment:
 
@@ -206,21 +206,21 @@ The pipeline will now:
 3. Deploy to EC2
 4. Verify health endpoint on EC2
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `APP_ENV` | `local` | Environment name (local/ci/production) |
 | `PORT` | `8000` | Application port |
 
-## 📊 API Endpoints
+##  API Endpoints
 
 | Endpoint | Method | Description | Response |
 |----------|--------|-------------|----------|
 | `/` | GET | Root endpoint | `{"message": "...", "environment": "..."}` |
 | `/health` | GET | Health check | `{"status": "OK", "environment": "..."}` |
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Run all tests
@@ -230,14 +230,14 @@ pytest tests/ -v
 pytest tests/ --cov=app --cov-report=html
 ```
 
-## 📦 Docker Image Details
+##  Docker Image Details
 
 - Base: `python:3.11-slim`
 - Size: ~150MB (optimized)
 - Port: 8000
 - Runtime: uvicorn with auto-reload disabled
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Pipeline fails at test step
 ```bash
@@ -264,11 +264,11 @@ docker ps
 docker logs golden-cicd-app
 ```
 
-## 📝 License
+##  License
 
 MIT
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -278,4 +278,4 @@ MIT
 
 ---
 
-Built with ❤️ using FastAPI, Docker, and GitHub Actions
+Built with  using FastAPI, Docker, and GitHub Actions
