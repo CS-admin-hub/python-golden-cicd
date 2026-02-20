@@ -14,3 +14,16 @@ async def root():
 @app.get("/health")
 async def health():
     return {"status": "OK", "environment": APP_ENV}
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+# Existing routes here...
+
+
+@app.get("/greet")
+def greet(name: str = "World"):
+    return {
+        "message": f"Hello {name}"
+    }
