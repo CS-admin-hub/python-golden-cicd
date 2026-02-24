@@ -1,16 +1,16 @@
-# 🧪 How to Test - Step by Step
+# How to Test - Step by Step
 
-## ✅ Your Repository is Live!
+##  Your Repository is Live!
 
 **URL:** https://github.com/NinadD26/golden-cicd-python
 
-**CI/CD Status:** ✅ ALL TESTS PASSED
+**CI/CD Status:**  ALL TESTS PASSED
 
 ---
 
-## 🎯 3 Ways to Test (Choose One)
+##  3 Ways to Test (Choose One)
 
-### ⭐ METHOD 1: Automated Test Script (Easiest)
+###  METHOD 1: Automated Test Script (Easiest)
 
 Just double-click or run:
 
@@ -34,7 +34,7 @@ This will automatically:
 
 ---
 
-### ⭐ METHOD 2: Manual Docker Testing
+###  METHOD 2: Manual Docker Testing
 
 ```bash
 # Step 1: Build the image
@@ -65,7 +65,7 @@ docker rm my-test-app
 
 ---
 
-### ⭐ METHOD 3: Just View on GitHub (No Local Setup)
+###  METHOD 3: Just View on GitHub (No Local Setup)
 
 The tests already ran successfully on GitHub!
 
@@ -73,10 +73,10 @@ The tests already ran successfully on GitHub!
    https://github.com/NinadD26/golden-cicd-python/actions/runs/22211412895
 
 2. **See What Passed:**
-   - ✅ Python tests (pytest)
-   - ✅ Docker build
-   - ✅ Container health check
-   - ✅ API endpoint verification
+   -  Python tests (pytest)
+   -  Docker build
+   -  Container health check
+   -  API endpoint verification
 
 3. **Download Docker Image:**
    - Go to the Actions run above
@@ -91,7 +91,7 @@ The tests already ran successfully on GitHub!
 
 ---
 
-## 📋 What You Should See
+##  What You Should See
 
 ### When Testing Root Endpoint (/)
 ```json
@@ -117,7 +117,7 @@ You'll see an interactive API documentation page (Swagger UI) where you can:
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Docker Not Installed?
 Download from: https://www.docker.com/products/docker-desktop
@@ -160,7 +160,7 @@ Invoke-WebRequest http://localhost:8000/health | Select-Object -Expand Content
 
 ---
 
-## ✅ Success Checklist
+##  Success Checklist
 
 Test is successful when you see:
 
@@ -173,7 +173,7 @@ Test is successful when you see:
 
 ---
 
-## 🎯 Quick Test Commands
+##  Quick Test Commands
 
 **One-liner to test everything:**
 
@@ -190,11 +190,11 @@ test
 test
 ```
 
-If you see `{"status":"OK"...}` then everything works! ✅
+If you see `{"status":"OK"...}` then everything works! 
 
 ---
 
-## 📊 View Full Results
+##  View Full Results
 
 Check these files for detailed information:
 
@@ -205,32 +205,32 @@ Check these files for detailed information:
 
 ---
 
-## 🚀 What's Next?
+##  What's Next?
 
 After confirming tests pass locally:
 
-1. ✅ **Celebrate!** Everything works!
+1.  **Celebrate!** Everything works!
 
-2. 🔜 **Enable AWS EC2 Deployment:**
+2.  **Enable AWS EC2 Deployment:**
    - Add GitHub Secrets (EC2_HOST, EC2_USER, EC2_SSH_KEY)
    - Uncomment EC2 job in `.github/workflows/ci-cd.yml`
    - Push changes
    - Watch it deploy automatically!
 
-3. 🔜 **Customize the Application:**
+3.  **Customize the Application:**
    - Add more endpoints in `app/main.py`
    - Add tests in `tests/test_main.py`
    - Push to GitHub
    - CI/CD runs automatically!
 
-4. 🔜 **Monitor in Production:**
+4.  **Monitor in Production:**
    - Use the `/health` endpoint for monitoring
    - Set up alerts
    - Add logging
 
 ---
 
-## 💡 Pro Tips
+##  Pro Tips
 
 1. **Use the test scripts** - They handle everything automatically
 2. **Check /docs endpoint** - Interactive API testing in browser
@@ -240,7 +240,7 @@ After confirming tests pass locally:
 
 ---
 
-## 🆘 Need Help?
+##  Need Help?
 
 1. Check **TESTING.md** for detailed troubleshooting
 2. View **GitHub Actions logs** for CI/CD issues
@@ -251,8 +251,8 @@ After confirming tests pass locally:
 
 **Remember:** The CI/CD pipeline already tested everything successfully on GitHub. Local testing is optional but recommended to see it work on your machine!
 
-**Status:** 🟢 READY TO TEST
+**Status:**  READY TO TEST
 
 ---
 
-*Generated: 2026-02-20*
+
